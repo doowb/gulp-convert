@@ -1,0 +1,32 @@
+{
+  "name": "gulp-convert",
+  "version": "0.0.1",
+  "description": "Gulp plugin to convert to or from JSON, YAML, XML, PLIST or CSV.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/assemble/gulp-convert.git"
+  },
+  "keywords": [
+    "gulpplugin",
+    "gulp",
+    "convert"
+  ],
+  "author": "Brian Woodward",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/assemble/gulp-convert/issues"
+  },
+  "dependencies": {
+    "gulp-util": "~2.2.0",
+    "event-stream": "~3.0.20",
+    "data-convert": "~0.0.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.16.1",
+    "should": "~2.1.1"
+  }
+}
