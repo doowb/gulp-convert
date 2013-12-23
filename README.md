@@ -1,7 +1,7 @@
 # gulp-convert [![NPM version][npm-image]][npm-url] [![Build status][build-image]][build-url]
 
 ## Work In Progress
-This plugin is not completely read yet.
+This plugin is not completely ready yet.
 
 ## Usage
 
