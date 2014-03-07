@@ -44,24 +44,23 @@ var createWriter = function(finish) {
  * Do the conversion.
  * Most of this plugin code comes from the gulp
  * example.
- * 
+ *
  * @param  {[Object]} options [List of options to use]
  * @return {[Stream]}         [List of File objects]
  */
 module.exports = function(options) {
-	var opts = options || {};
-	var converter = convert(opts);
+  var opts = options || {};
 
-	function modifyContents(file, cb) {
-	  var reader = createReader([String(file.contents)]);
-	  var writer = createWriter(function() {
-	  	file.path = gutil.replaceExtension(file.path, '.' + opts.to);
+  function modifyContents(file, cb) {
+    var reader = createReader([String(file.contents)]);
+    var writer = createWriter(function() {
+      file.path = gutil.replaceExtension(file.path, '.' + opts.to);
       file.contents = new Buffer(writer.toString());
       cb(null, file);
     });
 
-	  reader.pipe(convert()).pipe(writer);
-	};
+    reader.pipe(convert(opts)).pipe(writer);
+  }
 
-	return es.map(modifyContents);
+  return es.map(modifyContents);
 };
