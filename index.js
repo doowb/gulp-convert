@@ -1,12 +1,10 @@
-/**
- * Assemble
+/*!
+ * gulp-convert <https://github.com/assemble/gulp-convert.git>
  *
- * Assemble <http://assemble.io>
- * Created and maintained by Jon Schlinkert and Brian Woodward
- *
- * Copyright (c) 2013 Upstage.
- * Licensed under the MIT License (MIT).
+ * Copyright (c) 2013-2015, Brian Woodward.
+ * Licensed under the MIT License.
  */
+
 var convert = require('converter');
 var gutil = require('gulp-util');
 var es = require('event-stream');

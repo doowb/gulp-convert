@@ -1,6 +1,5 @@
-
 var convert = require('../');
-var should = require('should');
+require('should');
 var File = require('gulp-util').File;
 var Buffer = require('buffer').Buffer;
 require('mocha');
