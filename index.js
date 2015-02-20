@@ -7,7 +7,7 @@
  * Copyright (c) 2013 Upstage.
  * Licensed under the MIT License (MIT).
  */
-var convert = require('data-convert');
+var convert = require('converter');
 var gutil = require('gulp-util');
 var es = require('event-stream');
 var stream = require('stream');
