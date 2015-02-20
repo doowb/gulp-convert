@@ -1,7 +1,7 @@
 {
   "name": "gulp-convert",
   "description": "Gulp plugin to convert to or from JSON, YAML, XML, PLIST or CSV.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Brian Woodward",
   "repository": {
     "type": "git",
