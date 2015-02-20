@@ -1,8 +1,9 @@
-var convert = require('../');
-require('should');
+'use strict';
+var assert = require('assert');
 var File = require('gulp-util').File;
 var Buffer = require('buffer').Buffer;
-require('mocha');
+
+var convert = require('../');
 
 describe('gulp-convert', function() {
 
@@ -22,13 +23,18 @@ describe('gulp-convert', function() {
 		});
 
 		converter.on('data', function(data) {
-			console.log(data.contents.toString());
+			var json = JSON.parse(data.contents);
+			assert.deepEqual(json, [
+				{ first: 'one', second: 'two', third: 'three' },
+				{ first: '4', second: '5', third: '6' }
+			]);
+
 			done();
 		});
 
 		converter.write(fakeFile);
 		converter.end();
 
-  });  
+  });
 
 });
