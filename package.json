@@ -14,6 +14,9 @@
     "MIT"
   ],
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "mocha"
   },
