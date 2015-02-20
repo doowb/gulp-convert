@@ -21,12 +21,12 @@
     "url": "https://github.com/assemble/gulp-convert/issues"
   },
   "dependencies": {
-    "gulp-util": "~2.2.0",
-    "event-stream": "~3.0.20",
-    "data-convert": "~0.0.1"
+    "converter": "0.0.5",
+    "event-stream": "~3.2.2",
+    "gulp-util": "~3.0.3"
   },
   "devDependencies": {
-    "mocha": "~1.16.1",
-    "should": "~2.1.1"
+    "mocha": "~2.1.0",
+    "should": "~5.0.0"
   }
 }
