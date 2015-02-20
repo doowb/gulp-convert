@@ -1,6 +1,6 @@
 {
   "name": "gulp-convert",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Gulp plugin to convert to or from JSON, YAML, XML, PLIST or CSV.",
   "main": "index.js",
   "scripts": {
@@ -22,11 +22,11 @@
   },
   "dependencies": {
     "converter": "0.0.5",
-    "event-stream": "~3.0.20",
-    "gulp-util": "~2.2.0"
+    "event-stream": "~3.2.2",
+    "gulp-util": "~3.0.3"
   },
   "devDependencies": {
-    "mocha": "~1.16.1",
-    "should": "~2.1.1"
+    "mocha": "~2.1.0",
+    "should": "~5.0.0"
   }
 }
